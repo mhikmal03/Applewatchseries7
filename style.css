@@ -1,0 +1,173 @@
+:root{
+    --bg-color: linear-gradient( -25deg, #e6e8ec, #fff  );  
+    --darkcolor: #0a0a0c; 
+    --lightcolor: #fff;   
+    --primarycolor: #eb443e;    
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: poppins, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: var(--bg-color);
+    color: var(--darkcolor);
+    overflow: visible;
+}
+
+a{
+    color: var(--darkcolor);
+    font-size: 1rem;
+    transition: all 400ms ease;
+    font-weight: 500;
+}
+
+a:hover{
+    color: var(--primarycolor);
+}
+.btn{
+    display: inline-block;
+    background: var(--primarycolor);
+    padding: 0.5rem 2.4rem;
+    border-radius: 2rem;
+    color: var(--lightcolor);
+    border-radius: 1px solid transparent;
+
+}
+
+.btn:hover{
+    color: var(--darkcolor);
+    background: transparent;
+    border: 1px solid var(--darkcolor);
+}
+
+header{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 86%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 1.2rem;
+    position: absolute;
+    z-index: 10;
+}
+
+nav .logo{
+    font-size: 3.4rem;
+}
+
+nav .logo i::before{
+    margin: 0;
+}
+
+nav ul{
+    display: flex;
+    gap: 3.6rem;
+    align-items: center;
+}
+
+nav ul i{
+    font-size: 1.3rem;
+}
+/*main section*/
+section{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.left h2{
+    font-size: 2rem;
+}
+
+.left h1{
+    font-size: 7rem;
+    line-height: 1.1;
+    font-weight: 300;
+    color: var(--primarycolor);
+    letter-spacing: -0.4rem;
+}
+
+.left p{
+    max-width: 30rem;
+    font-weight: 300;
+}
+
+section .price{
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.container2{
+    margin-top: 100px;
+}
+
+section .btn{
+    margin-top: 2rem;
+    padding: 1.2rem 3rem;
+
+}
+
+.right{
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.background{
+    background: var(--lightcolor);
+    width: 30rem;
+    height: 30rem;
+    z-index: -1;
+    border-radius: 50%;
+    justify-self: end;
+    margin-left: 1000px;
+    margin-top: -700px;
+    
+}
+
+.image1{
+    width: 42rem;
+    height: 30rem;
+    position: absolute;
+    right: 5rem;
+    margin-top: -50px;
+}
+
+img{
+    width: 100%;
+    transform: rotate(35deg);
+    z-index: 0;
+    transition: all 1s ease; 
+}
+
+img:hover{
+    transform: rotate(0deg) scale(1.2);
+}
+
+h1{
+    margin-left: -10px;
+}
+
+.main {
+    margin: 0 auto;
+}
+
